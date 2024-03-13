@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+    <title>
+        Diabetes Prediction
+    </title>
+    <style>
+        body {
+             background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            
+            background-image:url({{url_for('static',filename='Chavani.png')}})
+
+            
+        }
+        
+        .layer {
+            background-color: rgba(61, 60, 60, 0.301);
+            background-repeat: no-repeat;
+            background-repeat-x: no-repeat;
+            background-repeat-y: no-repeat;
+            background-size: cover;
+            background-blend-mode: multiply;
+            background-position: center;
+            width: 100%;
+        }
+        
+        input[type=text],
+        select {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: flex;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: 'Poppins';
+            margin-left: 325px;
+        }
+        
+        input[type=number],
+        select {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: 'Poppins';
+            margin-left: 325px;
+        }
+        
+        input[type=submit] {
+            width: 50%;
+            background-color: #ABFCFA;
+            color: black;
+            padding: 12px 20px;
+            margin: 15px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            height: 8vh;
+            margin-left: 325px;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #05FBF5;
+            font-family: 'Poppins', sans-serif;
+            margin-left: 325px;
+        }
+        
+        .neeharika {
+            border-radius: 5px;
+            padding: 20px;
+        }
+        
+        .sim {
+            font-family: 'Poppins', sans-serif;
+            font-size: medium;
+            margin-left: 325px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layer">
+        <div class="neeharika">
+            <form action="/sub" method="POST">
+                <div class="sim">
+                    <label for="fname">Name</label>
+                </div>
+
+                <input type="text" id="fname" name="firstname" placeholder="Enter your name">
+                <div class="sim">
+                    <label for="country">Age</label>
+                </div>
+                <input type="number" step="any" id="lname" name="age" placeholder="Enter Your Age">
+                <div class="sim">
+                    <label for="fname">Pregnancies</label>
+                </div>
+
+                <input type="text" id="fname" name="preg" placeholder="No of Pregnancies...">
+                <div class="sim">
+                    <label for="lname">Glucose</label>
+                </div>
+
+                <input type="text" id="lname" name="Glucose" placeholder="Your Glucose level___">
+                <div class="sim">
+                    <label for="lname">Blood Pressure</label>
+                </div>
+
+                <input type="number" step="any" id="lname" name="bp" placeholder="Enter your BP levels">
+                <div class="sim">
+                    <label for="lname">Skin Thickness</label>
+                </div>
+
+                <input type="number" step="any" id="lname" name="skin" placeholder="Skin Thickness">
+                <div class="sim">
+                    <label for="lname">Insulin</label>
+                </div>
+
+                <input type="number" step="any" id="lname" name="insulin" placeholder="Enter Your Insulin levels">
+                <div class="sim">
+                    <label for="lname">BMI</label>
+                </div>
+
+                <input type="number" step="any" id="lname" name="BMI" placeholder="Enter Your BMI levels">
+                <div class="sim">
+                    <label for="lname">DiabetesPedigreeFunction</label>
+                </div>
+
+                <input type="number" step="any" id="lname" name="score" placeholder="Enter Your Score">
+
+
+
+                <input type="Submit">
+            </form>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
